@@ -119,7 +119,7 @@ def sendRegisterDMUnprompted(r,sender,reciver,amount):
                               'I created a new ethereum wallet for you, to be used when ever you want to send/recive Kin via this bot:\n\n' \
                               'Private Key: {}\n\n' \
                               'Address: {}\n\n' \
-                              'THIS INFO IS ALSO STORED BY KINTIPPER (and Reddit), DO NOT SEND LARGES AMOUNTS OF MONEY TO THIS ADDRESS\n\n' \
+                              'THIS INFO IS ALSO STORED BY KINTIPPER (and Reddit), DO NOT SEND LARGE AMOUNTS OF MONEY TO THIS ADDRESS\n\n' \
                               '[How do I use this bot?](https://github.com/kinfoundation)'\
             .format(reciver,sender,amount,priv,addr)
         r.redditor(reciver).message('KinTipper Registration',registrationMessage)
