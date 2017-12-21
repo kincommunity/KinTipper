@@ -10,9 +10,9 @@ I created this bot in order to
 
 Therefore, **this project is not made to be secure and should be treated as such**
 
-When this bot generates a new Ethereum wallet, it **SAVES the private keys in PLAIN TEXT**, so access for the new Ethereum wallet is not only avilable to the user, but also to the bot creator, and possible Reddit (if they monitor private messages).
+When this bot generates a new Ethereum wallet, it **SAVES the private keys in PLAIN TEXT**, so access for the new Ethereum wallet is not only avilable to the user, but also to the bot creator, and possibly Reddit (if they monitor private messages).
 
-For this reaseon, users should not send any large amount of money to their accounts, and this message is added with the creation of a new account:
+For this reaseon, users should not send any large amounts of money to their accounts, and this message is added with the creation of a new account:
 
 ```
 THIS INFO IS ALSO STORED BY KINTIPPER (and Reddit), DO NOT SEND LARGE AMOUNTS OF MONEY TO THIS ADDRESS
