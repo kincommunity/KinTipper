@@ -24,7 +24,7 @@ def getRelevantComments(r,lastReply):
 
     print "Obtaining last 10 comments..."
     # Go over the last 10 comments
-    for comment in r.subreddit('privbottest').comments(limit=10):
+    for comment in r.subreddit('<Subreddit name>').comments(limit=10):
         if 'kintipper' in comment.body.lower() and comment.created_utc > lastReply and \
                         comment.author.name != config.username:
             relevantComments.append(comment)
@@ -79,7 +79,7 @@ def checkSyntax(comment):
 
 def replyToComment(comment,msg):
     commentFormat = '\n\n ______________________________________ \n\n' \
-                    'I am a bot, [What is this?](https://github.com/kinfoundation)\n\n' \
+                    'I am a bot, [What is this?](https://github.com/kincommunity/KinTipper#what-is-this-bot)\n\n' \
                     'Reply with \"KinTipper !register\" to use me too!'
     comment.reply(msg + commentFormat)
     return comment.created_utc
@@ -100,7 +100,7 @@ def sendRegisterDM(r,comment):
                               'Private Key: {}\n\n' \
                               'Address: {}\n\n' \
                               'THIS INFO IS ALSO STORED BY KINTIPPER (and Reddit), DO NOT SEND LARGE AMOUNTS OF MONEY TO THIS ADDRESS\n\n' \
-                              '[How do I use this bot?](https://github.com/kinfoundation)'.format(priv,addr)
+                              '[How do I use this bot?](https://github.com/kincommunity/KinTipper#what-is-this-bot)'.format(priv,addr)
         r.redditor(comment.author.name).message('KinTipper Registration',registrationMessage)
         # Save the details for further use
         exportUser(comment.author.name,priv,addr)
@@ -120,7 +120,7 @@ def sendRegisterDMUnprompted(r,sender,reciver,amount):
                               'Private Key: {}\n\n' \
                               'Address: {}\n\n' \
                               'THIS INFO IS ALSO STORED BY KINTIPPER (and Reddit), DO NOT SEND LARGE AMOUNTS OF MONEY TO THIS ADDRESS\n\n' \
-                              '[How do I use this bot?](https://github.com/kinfoundation)'\
+                              '[How do I use this bot?](https://github.com/kincommunity/KinTipper#what-is-this-bot)'\
             .format(reciver,sender,amount,priv,addr)
         r.redditor(reciver).message('KinTipper Registration',registrationMessage)
         # Save the details for further use
