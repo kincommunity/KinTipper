@@ -43,7 +43,7 @@ pip install -r requirments.txt
 
 ## License
 
-The code is currently released under [GPLv2 license](LINK) due to some GPL-licensed packages it uses. (erc20token-sdk-python)
+The code is currently released under GPLv2 license due to some GPL-licensed packages it uses. (erc20token-sdk-python)
 
 
 # For the users
@@ -66,7 +66,7 @@ If you want to register for KinTipper, just submit a comment with the text
 KinTipper !register
 ```
 The bot will send you your new wallet details in a private message.  
-**IMPORTANT, PLEASE READ THE [DISCLAIMER](#Disclaimer) IN THE TOP OF THIS PAGE, THIS IS NOT DONE IN A SECURE WAY**  
+**IMPORTANT, PLEASE READ THE [DISCLAIMER](https://github.com/kincommunity/KinTipper#disclaimer) IN THE TOP OF THIS PAGE, THIS IS NOT DONE IN A SECURE WAY**  
 Now you can send Kin and Ether (to pay the fees) to this new wallet
 
 ### The tip command  
@@ -81,3 +81,8 @@ KinTipper /u/CryptoDude 54 :)
 ```
 
 # Screenshots
+
+![alt text](SampleScreenshots/Register.png)  
+![alt text](SampleScreenshots/Info.png)  
+![alt text](SampleScreenshots/Tip.png)  
+![alt text](SampleScreenshots/TxID.png)
